@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExceptionLib>
+   <class name="com.rkit.A">
+         <method name="m1">
+            <Exception name="MyException">
+               <Email to="a@b.com" cc="x@y.com" subject="MyException Occured"></Email>
+               <Log filePath="mylogfile.txt" ></Log>
+            </Exception>
+         </method>
+          <method name="m2">
+            <Exception name="MyException">
+               <Email to="a@b.com" cc="x@y.com" subject="MyException Occured"></Email>
+               <Log filePath="mylogfile.txt" ></Log>
+            </Exception>
+            <Exception name="YourException">
+               <Abort></Abort>
+               <Log filePath="mylogfile.txt" ></Log>
+            </Exception>
+         </method>
+   </class>
+   <class name="B">
+         <method name="f1">
+            <Exception name="HisException">
+               <Email to="a@b.com" cc="x@y.com" subject="MyException Occured"></Email>
+            </Exception>
+         </method>
+   </class>
+   <class name="PQR">
+         <method name="f1">
+            <Exception name="HisException">
+               <Email to="p@q.com" cc="x@y.com" subject="MyException Occured"></Email>
+            </Exception>
+         </method>
+   </class>
+   <class name="C">
+         <method name="f1">
+            <Exception name="HisException">
+               <Email to="a@b.com" cc="x@y.com" subject="MyException Occured"></Email>
+            </Exception>
+         </method>
+   </class>
+    <class name="XYZ">
+         <method name="f1">
+            <Exception name="HisException">
+               <Email to="a@b.com" cc="x@y.com" subject="MyException Occured"></Email>
+            </Exception>
+         </method>
+   </class>
+</ExceptionLib>
